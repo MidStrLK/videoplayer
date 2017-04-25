@@ -4,7 +4,7 @@
 var http                = require("http"),
     fs                  = require("fs"),
     url                 = require("url"),
-    server_port         = process.env['OPENSHIFT_NODEJS_PORT'] || 3003,
+    server_port         = process.env['OPENSHIFT_NODEJS_PORT'] || 3004,
     server_ip_address   = process.env['OPENSHIFT_NODEJS_IP']   || '127.0.0.1';
 
 function start() {
