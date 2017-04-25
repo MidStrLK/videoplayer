@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script src="./uppod.js" type="text/javascript"></script>
+
+</head>
+<body>
+    <div class="player" id="videoplayer" style="width: 670px"></div>
+</body>
+
+<script type="text/javascript">
+    var player = new Uppod({
+        m:"video",
+        uid:"videoplayer",
+        file:"video/1.mp4",
+        pl: {
+            playlist:[
+                {
+                    comment: 'Долгое катание по Москве реке',
+                    file: 'video/1.mp4',
+                    poster:"img/1.jpg"
+                },{
+                    comment: 'second',
+                    file: 'video/2.mp4',
+                    poster:"img/2.jpg"
+                },{
+                    comment: 'third',
+                    file: 'video/3.mp4',
+                    poster:"img/3.jpg"
+                }
+            ]
+        }
+    });
+</script>
+
+</html>

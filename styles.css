@@ -1,0 +1,11 @@
+.video_wrapper{
+    width: 670px;
+    height: 400px;
+    text-align: center;
+    position: relative;
+    margin: 20px auto;
+}
+
+.video_wrapper span{
+    font-size: 24px;
+}
