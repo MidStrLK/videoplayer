@@ -22,7 +22,7 @@ function start() {
             pathname = decodeURI(pathname);
             console.info('pathname - ',pathname);
 
-            if(pathname === '/'){
+            if(pathname === '/' || pathname === '/index.html'){
 
                 fs.readdir('video/', function(err, list) {
                     var items = '',
