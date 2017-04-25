@@ -41,7 +41,7 @@ function start() {
                         playerItems.push('var ' + id + ' = new Uppod({' +
                                             'm:"video",' +
                                             'uid:"' + id + '",' +
-                                            'file:"' + val + '",' +
+                                            'file:"./video/' + val + '",' +
                                             'comment:"' + name + '"});'
                                             );
 
@@ -54,10 +54,6 @@ function start() {
                     response.end(res);
 
                 });
-
-
-
-
 
             }else if(pathname.indexOf('.js') !== -1){
                 res = fs.readFileSync('.' + pathname);
@@ -84,7 +80,7 @@ function start() {
 
 
             }else if(pathname.indexOf('.mp4') !== -1){
-                res = fs.readFileSync('video/' + pathname);
+                res = fs.readFileSync('.' + pathname);
                 response['writeHead'](200, {'Content-Type': 'video/mp4'});
                 response.end(res);
 
